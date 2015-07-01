@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src = "../tracekit.js"></script>
+		<script>
+			window.onload = function(){
+				TraceKit.report.subscribe(function(errorReport) {
+					console.log(errorReport);
+				});
+				a();
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Tracekit example</h1>
+	</body>
+</html>
